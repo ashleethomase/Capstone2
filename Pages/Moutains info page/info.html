@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Basic Meta-->
+    <meta charset="utf-8">
+    <meta name="author" content="Ashlee Thomas-Enis">
+    <meta name="description" content="See the latest events happening for each location!">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Mountain Information</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="info.css">
+
+
+    <!--JavaScript-->
+    <script src="/Pages/Moutains info page/mountainData.js"></script>
+    <script src="/Pages/Home page/main.js"></script>
+    <script src="/Pages/Moutains info page/moutain.js"></script>
+
+  </head>
+
+  <body>
+  
+
+    <nav>
+      <ul>
+        <li class="btn"><span class="fa-bars"></span></li>
+        <div class="items">
+          <li><a href="/Pages/Home page/index.html">Home</a></li>
+          <li><a href="/Pages/Moutains info page/info.html">About</a></li>
+          <li><a href="/Pages/Parks Search page/search.html">Parks</a></li>
+          <li><a href="">News Stories</a></li> 
+        </div>
+        <li class="search-icon">
+          <input type="search" placeholder="Search">
+          <label  class="icon">
+            <span class="fa-search"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+    
+   
+<div class="filters">
+    <label id="mountainLabel">
+        Mountain Information:
+        <select name="mountains" id="mountainList"></select>
+    </label>
+</div>
+<div id="mountainResults"></div>
+
+  </body>
+
+</html>

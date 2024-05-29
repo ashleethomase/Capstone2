@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Basic Meta-->
+    <meta charset="utf-8">
+    <meta name="author" content="Ashlee Thomas-Enis">
+    <meta name="description" content="National Park search made easy, just one click!">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>National Park Search</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="search.css">
+
+    <!--JavaScript-->
+    <script src="/Pages/Parks Search page/nationalParkData.js"></script>
+    <script src="/Pages/Home page/main.js"></script>
+    <script src="/Pages/Parks Search page/locationData.js"></script>
+    <script src="/Pages/Parks Search page/parkTypeData.js"></script>  
+    <script src="/Pages/Parks Search page/parks.js"></script>
+
+    <!--ask about adding JS data to your file-->
+
+  </head>
+
+
+<body background="images/searchpix.png">
+
+<nav>
+  <ul>
+    <li class="btn"><span class="fa-bars"></span></li>
+    <div class="items">
+      <li><a href="/Pages/Home page/index.html">Home</a></li>
+      <li><a href="/Pages/Moutains info page/info.html">About</a></li>
+      <li><a href="/Pages/Parks Search page/search.html">Parks</a></li>
+      <li><a href="">News Stories</a></li> 
+    </div>
+    <li class="search-icon">
+      <input type="search" placeholder="Search">
+      <label  class="icon">
+        <span class="fa-search"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+
+
+<main>
+  <h1>National Park Search</h1>
+  <h3>Search By:</h3>
+<br>
+  <div class="radio">
+    <label>
+      <input type="radio" name="searchBy" id="locationRadio" checked>
+        Location(State)
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="searchBy" id="parkTypeRadio">
+        Park Type
+    </label>
+  </div> 
+    <br>
+    <div class="filters">
+        <label id="locationLabel">
+            Location:
+            <select name="locations" id="locations"></select>
+        </label>
+        <label id="parkTypeLabel" style="display:none">
+            Park Type:
+            <select name="parkTypes" id="parkTypes"></select>
+        </label>
+    </div>
+    <div id="results"></div>
+
+
+</div>
+
+
+</main>
+
+
+</body>
+
+</html>
